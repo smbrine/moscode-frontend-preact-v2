@@ -26,3 +26,6 @@ dist-ssr
 .env
 
 src/assets/fonts/*
+
+public/google*.html
+public/c6c9c5fe*.txt
