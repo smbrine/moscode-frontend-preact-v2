@@ -1,0 +1,33 @@
+{
+  "short_name": "МосКод",
+  "name": "МосКод — веб-студия.",
+  "icons": [
+    {
+      "src": "/logo-black.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/logo-white-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/logo-white-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/logo-white-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "background_color": "#111827",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#2563eb",
+  "description": "Компания, специализирующаяся на разработке сайтов и мобильных приложений."
+}
