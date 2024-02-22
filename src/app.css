@@ -8,79 +8,8 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');*/
 
 @font-face {
-    font-family: 'Noto Sans KR', 'sans-serif';
-    src: url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-100.woff2') format('woff2'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-100.woff') format('woff'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-100.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans KR', 'sans-serif';
-    src: url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-200.woff2') format('woff2'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-200.woff') format('woff'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-200.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans KR', 'sans-serif';
-    src: url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-300.woff2') format('woff2'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-300.woff') format('woff'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-300.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans KR', 'sans-serif';
-    src: url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-500.woff2') format('woff2'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-500.woff') format('woff'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-500.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans KR', 'sans-serif';
-    src: url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-600.woff2') format('woff2'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-600.woff') format('woff'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-600.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans KR', 'sans-serif';
-    src: url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-700.woff2') format('woff2'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-700.woff') format('woff'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-700.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans KR', 'sans-serif';
-    src: url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-800.woff2') format('woff2'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-800.woff') format('woff'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-800.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans KR', 'sans-serif';
-    src: url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-900.woff2') format('woff2'),
-    url('./assets/fonts/Noto+Sans+KR/noto-sans-kr-v36-cyrillic_latin-900.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Roboto';
+    font-family: Roboto, sans-serif;
+    font-display: swap;
     src: url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-100.woff2') format('woff2'),
     url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-100.woff') format('woff'),
     url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-100.ttf') format('truetype');
@@ -89,7 +18,8 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: Roboto, sans-serif;
+    font-display: swap;
     src: url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-300.woff2') format('woff2'),
     url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-300.woff') format('woff'),
     url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-300.ttf') format('truetype');
@@ -98,7 +28,8 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: Roboto, sans-serif;
+    font-display: swap;
     src: url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-500.woff2') format('woff2'),
     url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-500.woff') format('woff'),
     url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-500.ttf') format('truetype');
@@ -107,7 +38,8 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: Roboto, sans-serif;
+    font-display: swap;
     src: url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-700.woff2') format('woff2'),
     url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-700.woff') format('woff'),
     url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-700.ttf') format('truetype');
@@ -116,14 +48,11 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: Roboto, sans-serif;
+    font-display: swap;
     src: url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-900.woff2') format('woff2'),
     url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-900.woff') format('woff'),
     url('./assets/fonts/Roboto/roboto-v30-cyrillic_latin-900.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
-}
-
-html, body {
-/*    */
 }

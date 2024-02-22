@@ -1,9 +1,8 @@
-import {StateUpdater, useEffect, useState} from "preact/hooks";
+import {StateUpdater,  useState} from "preact/hooks";
 import {ChangeEvent, TargetedEvent} from "preact/compat";
 import connectFormSubmit from "../services/connectFormSubmit.tsx";
 import useToast from "../hooks/useToast.tsx";
-import {CustomText as Text} from "../UI/CustomText.tsx";
-import {send} from "vite";
+import {CustomText as Text} from "./UI/CustomText.tsx";
 
 function isEmailFieldValid(value: string) {
     const symbolsEmailRegex = /^[-+_.@a-zA-Z0-9]+$/;

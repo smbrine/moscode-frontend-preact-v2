@@ -1,14 +1,13 @@
 import {useState} from "preact/hooks";
-import B2Cross from '../assets/burger_to_cross.svg'
-import C2Burger from '../assets/cross_to_burger.svg'
+import BurgerMenu from "./BurgerMenu.tsx";
 
 interface CustomHeaderProps {
     className: string;
     links:
         {
             text: string,
-            href: string
-        }[]
+            href: string,
+        }[],
 }
 
 function CustomHeader({className, links}: CustomHeaderProps) {
@@ -29,8 +28,7 @@ function CustomHeader({className, links}: CustomHeaderProps) {
                             <ul className="flex items-center gap-3 md:gap-6 text-[13px] tracking-tighter font-light md:tracking-normal md:text-[14px] lg:text-xl md:font-thin">
                                 {links.map((link, key) => (
                                     <li key={key}>
-                                        <a
-                                            className="transition text-white hover:text-white/75"
+                                        <a className="transition text-white hover:text-white/75"
                                             href={link.href}
                                         >
                                             {link.text}
@@ -60,26 +58,7 @@ function CustomHeader({className, links}: CustomHeaderProps) {
                             </div>
                         </div>
 
-                        <div className="sm:hidden flex flex-col">
-                            <button
-                                className={'absolute flex flex-col space-y-1 w-[48px] h-[48px] top-[8px] right-[8px]'}
-                                onClick={() => setIsOpen(!isOpen)}>
-                                <img src={isOpen ? B2Cross : C2Burger} className={'absolute w-full h-full'} alt={'12'}/>
-                            </button>
-                            <ul className={`${isOpen ? "absolute flex flex-col space-y-1 top-[80px] right-16 sm:right-10" : "hidden"}`}>
-                                {links.map((link, key) => (
-                                    <li key={key} className="block">
-                                        <a
-                                            href={link.href}
-                                            className="block rounded-lg px-5 py-2.5 text-sm font-medium bg-gray-800 text-gray-200 text-center"
-                                        >
-                                            {link.text}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
+                        <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} links={links} className={"sm:hidden"}/>
                     </div>
                 </div>
             </div>

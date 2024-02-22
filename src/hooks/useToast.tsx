@@ -1,6 +1,5 @@
 import { createContext, FunctionComponent, ReactNode, useContext } from 'preact/compat';
 import {useState} from 'preact/hooks'
-import { CustomText as Text } from "../UI/CustomText.tsx";
 import CrossSVG from '../assets/cross.svg';
 import SuccessSVG from '../assets/success.svg'
 

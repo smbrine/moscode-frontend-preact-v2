@@ -17,9 +17,20 @@
       "sizes": "512x512"
     },
     {
-      "src": "/logo-white-512.png",
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "256x256",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.png",
       "type": "image/png",
-      "sizes": "512x512",
+      "sizes": "48x48",
       "purpose": "maskable"
     }
   ],
@@ -29,5 +40,5 @@
   "display": "fullscreen",
   "scope": "/",
   "theme_color": "#2563eb",
-  "description": "Компания, специализирующаяся на разработке сайтов и мобильных приложений."
+  "description": "Компания, специализирующаяся на разработке сайтов и мобильных приложений. Мы работаем на ваши идеи!"
 }

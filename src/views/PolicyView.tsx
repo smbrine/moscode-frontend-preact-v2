@@ -1,4 +1,4 @@
-import {CustomText as Text} from "../UI/CustomText.tsx";
+import {CustomText as Text} from "../components/UI/CustomText.tsx";
 import {StateUpdater, useEffect} from "preact/hooks";
 
 interface PolicyViewProps {
