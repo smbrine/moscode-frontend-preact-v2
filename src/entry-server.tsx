@@ -22,6 +22,5 @@ export default async function serverRenderToString(path: string) {
     // Extracted CSS
     css = purgeCSSResult[0].css;
 
-
     return [html, css]
 }
