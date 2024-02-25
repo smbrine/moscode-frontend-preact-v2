@@ -1,5 +1,6 @@
 import {useState} from "preact/hooks";
 import BurgerMenu from "./BurgerMenu.tsx";
+import {route} from 'preact-router'
 
 interface CustomHeaderProps {
     className: string;
@@ -18,7 +19,7 @@ function CustomHeader({className, links}: CustomHeaderProps) {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
-                        <a className="block text-teal-600 dark:text-teal-600" href="/">
+                        <a className="block text-teal-600" href={`/#start`} onClick={_ => route(`/a`)}>
                             <h1 className={'text-4xl text-white'}>MosCode</h1>
                         </a>
                     </div>
@@ -30,6 +31,7 @@ function CustomHeader({className, links}: CustomHeaderProps) {
                                     <li key={key}>
                                         <a className="transition text-white hover:text-white/75"
                                             href={link.href}
+                                            onClick={_ => route(`/a`)}
                                         >
                                             {link.text}
                                         </a>

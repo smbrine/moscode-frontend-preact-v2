@@ -1,3 +1,4 @@
+import {route} from "preact-router";
 
 interface CustomFooterProps {
     links:
@@ -7,7 +8,8 @@ interface CustomFooterProps {
         }[]
 
 }
-const CustomFooter = ({links} : CustomFooterProps) => {
+
+const CustomFooter = ({links}: CustomFooterProps) => {
 
     return (
         <footer className="bg-gray-900">
@@ -15,7 +17,8 @@ const CustomFooter = ({links} : CustomFooterProps) => {
                 <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
                     <a
                         className="inline-block rounded-full p-2 text-white shadow transition sm:p-3 lg:p-4 bg-gray-800 hover:bg-gray-600"
-                        href='#'
+                        href={links[0].href}
+                        onClick={_ => route(`/a`)}
                     >
                         <span className="sr-only">Back to top</span>
 
@@ -40,8 +43,10 @@ const CustomFooter = ({links} : CustomFooterProps) => {
                         <p
                             className="mx-auto mt-6 max-w-md text-center leading-relaxed lg:text-left text-gray-400"
                         >
-                            Наша команда состоит из опытных профессионалов, нацеленных на предоставление высококачественных услуг.
-                            Мы открыты к бартеру и работе на общественных началах, стремясь оказывать положительное влияние на наше сообщество и помогать в росте бизнеса.
+                            Наша команда состоит из опытных профессионалов, нацеленных на предоставление
+                            высококачественных услуг.
+                            Мы открыты к бартеру и работе на общественных началах, стремясь оказывать положительное
+                            влияние на наше сообщество и помогать в росте бизнеса.
                             Оставьте свои контактные данные, и мы с вами свяжемся!
                         </p>
                     </div>
@@ -54,6 +59,7 @@ const CustomFooter = ({links} : CustomFooterProps) => {
                                 <a
                                     className=" transition  text-white hover:text-white/75"
                                     href={link.href}
+                                    onClick={_ => route(`/a`)}
                                 >
                                     {link.text}
                                 </a>
@@ -62,7 +68,7 @@ const CustomFooter = ({links} : CustomFooterProps) => {
                     </ul>
                 </div>
 
-                <p className="mt-12 text-center text-sm text-gray-500 lg:text-right dark:text-gray-400">
+                <p className="mt-12 text-center text-sm lg:text-right text-gray-400">
                     Copyright &copy; 2024. All rights reserved.
                 </p>
             </div>

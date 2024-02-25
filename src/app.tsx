@@ -32,9 +32,9 @@ export default function App ({path}:AppProps){
 
     useEffect(() => {
         if (pathname === '/') {
-            setHomeHref('#')
-            setServicesHref('#services')
-            setReasonsHref('#reasons')
+            setHomeHref('/#start')
+            setServicesHref('/#services')
+            setReasonsHref('/#reasons')
             setPolicyHref('/policy')
 
         } else if (pathname === '/policy') {

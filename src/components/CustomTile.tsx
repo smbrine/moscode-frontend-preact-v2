@@ -15,11 +15,11 @@ const CustomTile = ({data}: {data: Data}) => {
             className="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25 min-w-60 flex flex-col justify-between min-h-[20vh] md:min-h-[35vh] mx-auto">
             <div className="flex flex-col justify-between rounded-[10px] p-4 sm:p-6 bg-gray-900 h-full">
                 <div className="flex-1">
-                    <a href="#" onClick={(e) => {e.preventDefault()}}>
+                    <button href="#" onClick={(e) => {e.preventDefault()}} style={{cursor: "default"}}>
                         <h3 className="mt-0.5 text-lg font-medium md:text-2xl text-white">
                             {data.title}
                         </h3>
-                    </a>
+                    </button>
                 </div>
                 <div className={'w-12 md:w-24 h-[100%] flex items-center justify-center'}>
                     <img src={data.icon.src} className={'w-[100%] h-auto'} alt={data.icon.alt}/>

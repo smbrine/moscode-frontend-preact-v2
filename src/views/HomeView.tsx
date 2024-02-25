@@ -128,27 +128,9 @@ export const HomeView = ({setPathname}: HomeViewProps) => {
             ref.current.scrollIntoView({behavior: 'smooth', block: 'start'})
         }
     }
-    function hashHandler(e: HashChangeEvent) {
+    function hashHandler(e: Event) {
         e.preventDefault()
 
-        switch (window.location.hash) {
-            case '#reasons':
-                executeScroll(reasonsSection)
-                break;
-            case '#services':
-                executeScroll(servicesSection)
-                break;
-            case '#':
-                executeScroll(startSection)
-                break;
-        }
-    }
-
-    useEffect(() => {
-        setPathname('/')
-    }, []);
-
-    useEffect(() => {
         switch (window.location.hash) {
             case '#reasons':
                 executeScroll(reasonsSection)
@@ -159,11 +141,33 @@ export const HomeView = ({setPathname}: HomeViewProps) => {
             case '#start':
                 executeScroll(startSection)
                 break;
+            case '#':
+                executeScroll(startSection)
+                break;
+        }
+    }
+
+
+    useEffect(() => {
+        switch (window.location.hash) {
+            case '#reasons':
+                executeScroll(reasonsSection)
+                setPathname('/')
+                break;
+            case '#services':
+                executeScroll(servicesSection)
+                setPathname('/')
+                break;
+            case '#start':
+                executeScroll(startSection)
+                setPathname('/')
+                break;
         }
 
         window.addEventListener('hashchange', hashHandler);
 
         return () => window.removeEventListener('hashchange', hashHandler);
+
 
     }, [])
 
@@ -171,7 +175,7 @@ export const HomeView = ({setPathname}: HomeViewProps) => {
         <>
             <CustomModal className={'fixed w-screen h-lvh z-10 flex-col flex justify-center items-center'}
                          isPresented={modalIsPresented} setIsPresented={setModalIsPresented}/>
-            <section ref={startSection}  className="bg-gray-900 text-white min-h-screen">
+            <section ref={startSection}  className="bg-gray-900 text-white min-h-screen h-[400px]">
                 <div className="mx-auto max-w-lg px-4 py-32 flex h-screen items-center">
                     <div className="mx-auto max-w-3xl text-center">
                         <h1
@@ -213,7 +217,7 @@ export const HomeView = ({setPathname}: HomeViewProps) => {
                     </div>
                 </div>
             </section>
-            <section ref={servicesSection} className='bg-gray-900 text-white min-h-screen flex flex-col max-w-[1620px] mx-auto'>
+            <section ref={servicesSection} className='bg-gray-900 text-white min-h-screen h-[400px] flex flex-col max-w-[1620px] mx-auto'>
                 <div
                     className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-16 w-10/12 md:w-9/12 mx-auto items-stretch md:my-auto my-16 ">
                     {abilitiesTiles.map((tile, key) => (
@@ -221,7 +225,7 @@ export const HomeView = ({setPathname}: HomeViewProps) => {
                     ))}
                 </div>
             </section>
-            <section ref={reasonsSection} className='bg-gray-900 text-white md:min-h-screen flex flex-col max-w-[1620px] mx-auto'>
+            <section ref={reasonsSection} className='bg-gray-900 text-white min-h-screen h-[400px] flex flex-col max-w-[1620px] mx-auto'>
                 <div
                     className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-16 w-10/12 md:w-9/12 mx-auto items-stretch md:my-auto my-16">
                     {reasonsTiles.map((tile, key) => (
